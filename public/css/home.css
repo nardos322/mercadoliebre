@@ -1,0 +1,312 @@
+:root {
+    /* creo variables :root*/
+    --color-amarillo: #EAC926;
+    --color-azul : #03264C;
+    --color-celeste : #1259c3;
+    --color-grisOscuro : #666;
+    --color-grisClaro : #ebebeb;
+    --color-verde : #39b54a;
+    /* FUENTES */
+    --font-roboto : 'Roboto', sans-serif;
+    /* Tamaños de fuentes */
+    --paragraph : 12px;
+    --title : 24px;
+    --prices : 18px;
+    --discounts-descriptions : 16px;
+    /* las variables despues se llaman asi var(--variable) */
+
+}
+
+/* ESTILOS GENERALES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    /* cambio la fuente a todas las letras que hay en el body */
+    font-family: var(--font-roboto);
+    width: 100%;
+}
+
+li {
+    /* saco las viñetas de las litas */
+    list-style: none;
+}
+
+/* FIN ESTILOS GENERALES */
+
+/* HEADER */
+
+
+
+header.main-header {
+    background-color: var(--color-amarillo);
+    width: 100%;
+    
+}
+
+
+header div.logo-busqueda {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+    
+    
+}
+
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+
+
+
+
+/* barra de busqueda*/
+header div input {
+    width: 145px;
+    height: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    
+    
+    
+    
+}
+
+
+/* lupita busqueda*/
+.busqueda {
+    display: none;
+    height: 20px;
+    margin-left: 2px;
+   
+    
+    
+}
+
+.logo-busqueda p {
+    font-size: 11px;
+    align-self: flex-end;
+    text-align: right;
+   
+
+
+  
+    
+    
+    
+}
+
+
+
+/* END HEADER */
+
+/* INICIO NAV */
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.menu-top {
+    display: none;
+}
+
+.menu-bottom {
+    display: none;
+}
+
+.burger-menu {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: var(--color-celeste);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+/* FIN HEADER */
+
+
+/* BANNER*/
+
+.banner img {
+    width: 100vw;
+    
+
+}
+
+/* END BANNER */
+
+
+
+
+/* CENTRANDO MAIN */
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    
+    
+    
+    
+}
+
+main h3 {
+    margin-left: 10px;
+    color: var(--color-grisOscuro);
+}
+
+
+
+
+section article {
+    margin: 10px;
+    border-top: solid 10px #ebebeb;
+    padding: 15px;
+    
+}
+
+.descripcion {
+    display: none;
+    color: var(--color-grisOscuro);
+    margin-top: 15px;
+    
+    
+    
+}
+
+.descuento {
+    color: #39b54a;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+footer article {
+    margin-bottom: 25px;
+}
+
+footer article p {
+    font-size: var(--paragraph);
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer article h4 {
+    font-size: var(--discounts-descriptions);
+}
+
+footer article i {
+    color: var(--color-celeste);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+footer p#copyright {
+    font-size: var(--paragraph);
+    color: var(--color-grisOscuro);
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/* MEDIA QUIERY VERSION TABLET*/
+
+@media (min-width:361px) {
+
+    
+    
+    /* mostrando nav top */
+    header nav .menu-top {
+        margin-bottom: 20px;
+        display: block;
+        
+    }
+    
+    /* mostrando nav bot */
+    .menu-bottom {
+        display: block;
+    }
+    
+    /* ocultando menu burger  */
+    .burger-menu {
+        display: none;
+    }
+     
+    /* mostrando description */
+    .descripcion {
+        display: inline-block;
+    }
+
+    main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
+    }
+
+   
+}
+
+
+
+/* MEDIA QUIERY PARA DESKTOP */
+
+@media (min-width:769px) {
+    
+    /* mostrando nav top */
+    header nav .menu-top {
+        margin-bottom: 20px;
+        display: inline-block;
+        
+    }
+    
+     /* mostrando nav bot */
+    .menu-bottom {
+        display: block;
+    }
+    
+
+    /* ocultando menu burger  */
+    .burger-menu {
+        display: none;
+    }
+    
+    /* mostrando description */
+    .descripcion {
+        display: block;
+    }
+
+    main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+   
+
+}
