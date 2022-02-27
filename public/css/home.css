@@ -227,6 +227,9 @@ section article i {
     border: solid 1px #39b54a;
     padding: 5px;
     position: absolute;
+    
+    bottom: 0;
+    right: 15px;
    
 
     
@@ -241,8 +244,22 @@ section article i {
     
 }
 
-.descuento {
+.contenedor-precio {
+    display: flex;
+}
+
+.contenedor-precio p {
+    flex-grow: 0.3;
+    font-size: 18px;
+    
+}
+
+.contenedor-precio .descuento {
     color: #39b54a;
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+    flex-grow: 0.7;
 }
 
 
