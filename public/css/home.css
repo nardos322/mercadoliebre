@@ -50,22 +50,19 @@ li {
 header.main-header {
     background-color: var(--color-amarillo);
     width: 100%;
-    
-    
+    height: 160px;
     
 }
 
 
 header div.logo-busqueda {
     display: flex;
-    
+    margin-bottom: 10px;
     width: 100%;
     height: 90px;
     flex-wrap: wrap;
     align-items: center;
     padding: 10px;
-    
-    
     
 }
 
@@ -93,9 +90,6 @@ header div input {
     padding: 10px;
     border-radius: 5px;
     
-    
-    
-    
 }
 
 
@@ -110,23 +104,16 @@ header div input {
     
     height: 20px;
     margin-left: 0.5px;
-    
-   
-    
-    
+     
 }
 
 .logo-busqueda p {
     
+    margin-top: 20px;
+    
     font-size: 11px;
     text-align: center;
-    width: 100%;
-   
-
-
-  
-    
-    
+    width: 100%;   
     
 }
 
@@ -168,7 +155,7 @@ nav {
 /* BANNER*/
 
 .banner img {
-    width: 100vw;
+    width: 100%;
     
 
 }
@@ -185,9 +172,6 @@ main {
     width: 90%;
     
     
-    
-    
-    
 }
 
 .ultimo-visto {
@@ -200,6 +184,7 @@ main {
 main h3 {
     
     color: var(--color-grisOscuro);
+    
 }
 
 
@@ -231,7 +216,6 @@ section article i {
     bottom: 0;
     right: 15px;
    
-
     
 }
 
@@ -239,7 +223,6 @@ section article i {
     display: none;
     color: var(--color-grisOscuro);
     margin-top: 15px;
-    
     
     
 }
@@ -310,18 +293,69 @@ footer p#copyright {
 
 @media (min-width:700px) {
 
-    
-    
-    /* mostrando nav top */
-    header nav .menu-top {
-        margin-bottom: 20px;
-        display: block;
+    header.main-header {
+        height: 150px;
+    }
+
+    header div.logo-busqueda {
+        display: flex;
+        width: 100%;
+        height: 90px;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px;     
         
     }
     
+    
+    
+    .logo {
+        width: 150px;
+        height: 50px;
+        
+    }
+    
+    .logo-busqueda p {
+        width: 250px;
+        margin-top: 0;
+    }
+    
+    
+    /* Editando NAV  */
+
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    /* mostrando nav top */
+    header nav .menu-top {
+        
+        display: flex;
+          
+    }
+
+    .menu-top li {
+        margin-right: 5px;
+    }
+    
+    
     /* mostrando nav bot */
     .menu-bottom {
-        display: block;
+        display: flex;
+        
+        
+    }
+
+    .menu-bottom li {
+        margin-right: 15px;
+    }
+
+    .menu-bottom li:last-child {
+        margin-right: 0;
     }
     
     /* ocultando menu burger  */
@@ -329,31 +363,72 @@ footer p#copyright {
         display: none;
     }
      
+/********************************************************************************************/
+
+/* Editando productos MAIN */
+
+
     /* mostrando description */
-    .descripcion {
-        display: inline-block;
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main h3 {
+        margin-bottom: 20px;
+        
+        width: 94%;
+        
+        
+    }
+    
+    .ultimo-visto {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 750px;
     }
 
     main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-right: 50px;
         
+    }
+
+    .descripcion {
+        display: inline-block;
     }
 
    
 }
 
+/*///////////////////////////SECCION OFERTAS ///////////////////////////////////////////////*/
+
+.ofertas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 750px;
+}
+
+/*******************************FIN VERSION TABLET ********************************************/
 
 
-/* MEDIA QUIERY PARA DESKTOP */
+/* MEDIA QUIERY PARA DESKTOP *//////////////////////////////////////////////////////////////////
 
 @media (min-width:1200px) {
+
     
-    /* mostrando nav top */
-    header nav .menu-top {
-        margin-bottom: 20px;
-        display: inline-block;
-        
+    
+
+    .logo-busqueda p {
+
+        margin-top: 0px;
     }
+
+
     
      /* mostrando nav bot */
     .menu-bottom {
@@ -365,6 +440,25 @@ footer p#copyright {
     .burger-menu {
         display: none;
     }
+
+    /* Menu Navegacion */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        font-size: 12px;
+    }
+
+
+    /* EDITANDO ESTILOS DE LAS TARJETAS //////////*/
+
+
+    .ultimo-visto {
+        width: 100%;
+
+    }
+
+
     
     /* mostrando description */
     .descripcion {
