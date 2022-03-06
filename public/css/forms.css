@@ -1,0 +1,96 @@
+@import url('home.css');
+
+.form-container {
+    background: rgb(106,105,105);
+    background: linear-gradient(0deg, rgba(106,105,105,1) 0%, rgba(193,193,193,1) 32%, rgba(249,251,251,1) 100%);
+    
+}
+.form-container h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.input-container {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 310px;
+    
+    
+    
+}
+
+.input-style {
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    display: block;
+    padding: 13px;
+    border: 1px solid #39c;
+    outline: none;
+
+}
+
+
+.message-error {
+    margin: 0 auto;
+    font-size: 0.8rem;
+    color: red;
+    
+    
+}
+
+.input-container h5 {
+    padding-bottom: 10px;
+}
+
+.input-container .perfil-usuario {
+    margin-right: 20px;
+    display: inline;
+}
+
+.input-container .perfil-usuario:last-child {
+    margin-right: 0px;
+}
+
+.input-container label {
+    display: block;
+    padding: 5px;
+}
+
+.btn-container .btn-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 100%;
+    background-color: var(--color-celeste);
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .register {
+        width: 600px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 20px 40px;
+    }
+}

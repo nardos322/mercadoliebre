@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-busqueda">
+            <div class="logo">
+                <img id="logo" src="images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+            </div>
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar productos, marcas y mas">
+                <button  class="busqueda">
+                <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        
+        <nav>
+            <ul class="menu-top">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="menu-bottom">
+                <li><a href="/">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt "></i></a></li>
+                <li><a href="">Mis compras <i class="fas fa-shopping-basket "></i></a></li>
+            </ul>
+
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="form-container">
+        <form class="register" action="" method="GET">
+            <h4>Registro de usuario</h4>
+            <div class="input-container">
+                <input type="text" class="input-style" placeholder="Nombre y apellido" name="nombre-apellido">
+                <span class="message-error">Debe introducir Nombre y apellido</span>
+            </div>
+            <div class="input-container">
+                <input type="text" class="input-style" placeholder="Nombre de usuario" name="nickname">
+                <span class="message-error">Debe introducir Nombre de usuario</span>
+            </div>
+            <div class="input-container">
+                <h5>Fecha de nacimiento</h5>
+                <input type="date"  class="input-style" name="nacimiento">
+            </div>
+            <div class="input-container">
+                <input type="text" class="input-style" placeholder="Domicilio" name="domicilio">
+                <span class="message-error">Introducir domicilio</span>
+            </div>
+            <div class="input-container">
+                <h5>Perfil de usuario</h5>
+                <label class="perfil-usuario"><input type="radio" name="perfil-user" value="comprador">Comprador</label>
+                <label class="perfil-usuario"><input type="radio" name="perfil-user" value="vendedor">Vendedor</label>
+            </div>
+            <div class="input-container">
+                <h5>Categorias de interes</h5>
+                <label><input type="checkbox" name="interes" value="electro">Electro</label>
+                <label><input type="checkbox" name="interes" value="moda">Moda</label>
+                <label><input type="checkbox" name="interes" value="hogar">Hogar</label>
+                <label><input type="checkbox" name="interes" value="jugeteria">Jugeteria</label>
+                <label><input type="checkbox" name="interes" value="vida-sana">Vida sana</label>
+            </div>
+            <div class="input-container">
+                <h5>Foto de usuario</h5>
+                <input type="file" name="avatar" accept=".png, .jpg">
+            </div>
+            <div class="input-container">
+                <input type="password" name="pass" class="input-style" placeholder="Introducir contraseña">
+                <span class="message-error">Este campo es obligatorio</span>
+            </div>
+            <div class="input-container">
+                <input type="password" name="pass2" class="input-style" placeholder="Confirmar contraseña">
+                <span class="message-error">Las contraseñas no coinciden</span>
+            </div>
+            <div class="btn-container input-container">
+                <a href="/">
+                    <input type="button" value="Registrarme" class="btn-style input-style">
+                </a>
+                
+            </div>
+               
+            </div>
+            <div class="btn-container input-container ">
+                <button type="reset" class="input-style btn-style">Cancelar</button>
+            </div>
+        </form>  
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+@import url('forms.css');
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.btn-container {
+    padding: 10px;
+}
+
+.login-container form .btn-style {
+    width: 290px;
+}
